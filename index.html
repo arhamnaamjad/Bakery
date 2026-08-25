@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Artisan Bakery — Freshly Baked, Made With Love</title>
+<meta name="description" content="Artisan Bakery — handmade cakes, cupcakes, cookies and pastries, baked fresh every day." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- ===================== Navbar ===================== -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#home" class="nav__brand"><span>🧁</span> Artisan Bakery</a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#menu" class="btn btn-primary nav__cta">Order Now</a>
+      </nav>
+      <button class="nav__burger" id="burger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== Home ===================== -->
+  <section id="home" class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__blob"></div>
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <div class="hero__eyebrow reveal"><span>✨</span> Baked Fresh, Every Morning</div>
+        <h1 class="hero__title reveal">Artisan Bakery — <br>Made With <em>Love</em></h1>
+        <p class="hero__sub reveal">Handmade cakes, cupcakes, cookies and pastries, baked in small batches with real butter and a lot of patience.</p>
+        <div class="hero__actions reveal">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#about" class="btn">Our Story</a>
+        </div>
+      </div>
+      <div class="hero__media reveal">
+        <div class="hero__media-frame">
+          <img src="images/fruit-tart.png" alt="Fresh baked cake" />
+        </div>
+        <div class="hero__badge">
+          <span>⭐</span>
+          <div>
+            <b>4.9 / 5</b>
+            <small>Loved by 500+ customers</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Menu ===================== -->
+  <section id="menu" class="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">What we bake</span>
+        <h2>Our Menu</h2>
+        <p>A small, seasonal menu of cakes, cupcakes, cookies and pastries — baked fresh every day.</p>
+      </div>
+
+      <div class="menu-tabs reveal">
+        <button class="menu-tab active" data-filter="all">All</button>
+        <button class="menu-tab" data-filter="cakes">Cakes</button>
+        <button class="menu-tab" data-filter="cupcakes">Cupcakes</button>
+        <button class="menu-tab" data-filter="cookies">Cookies</button>
+        <button class="menu-tab" data-filter="pastries">Pastries</button>
+      </div>
+
+      <div class="menu-grid" id="menuGrid"></div>
+    </div>
+  </section>
+
+  <!-- ===================== About ===================== -->
+  <section id="about">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="images/black-forest-cake.png" alt="Inside the bakery" />
+        <div class="about-media__accent"></div>
+      </div>
+      <div class="about-copy reveal">
+        <span class="eyebrow">Our story</span>
+        <h2>Baked with care, since day one.</h2>
+        <p>Artisan Bakery started as a small home kitchen and grew into a neighborhood favorite, one cake at a time. We still bake everything the same way we did on day one — real butter, real fruit, and no shortcuts.</p>
+        <p>Every order is made by hand the morning it's collected, so what you taste is always fresh, never frozen.</p>
+        <ul class="about-list">
+          <li><span>🌾</span> Quality Ingredients</li>
+          <li><span>🧼</span> Hygienic Kitchen</li>
+          <li><span>❤️</span> Made With Love</li>
+          <li><span>🚚</span> Same-Day Delivery</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Contact ===================== -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Visit or Order</h2>
+        <p>Have a question, or want to place a custom order? Drop us a message below.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="contact-card">
+            <span>📍</span>
+            <div><b>Address</b><p>123 Bakery Street, Lahore, Pakistan</p></div>
+          </div>
+          <div class="contact-card">
+            <span>📞</span>
+            <div><b>Phone</b><p>+92 300 1234567</p></div>
+          </div>
+          <div class="contact-card">
+            <span>🕒</span>
+            <div><b>Opening Hours</b><p>Tue – Sun, 9:00 AM – 9:00 PM</p></div>
+          </div>
+          <div class="contact-card">
+            <span>✉️</span>
+            <div><b>Email</b><p>hello@artisanbakery.com</p></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <h3>Send us a message</h3>
+          <p>We usually reply within a few hours.</p>
+          <div class="form-success" id="formSuccess">Thank you! Your message has been sent — we'll get back to you soon.</div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell us what you'd like to order…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== Footer ===================== -->
+  <footer>
+    <div class="container">
+      <div class="nav__brand"><span>🧁</span> Artisan Bakery</div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p>© <span id="year"></span> Artisan Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
